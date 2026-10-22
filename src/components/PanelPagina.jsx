@@ -1,5 +1,9 @@
 function Panel(encabezado, children){
     return(
-        <h2>{encabezado}</h2>
+        <section className ="curso">
+            <h2>{encabezado}</h2>
+            <div>{children}</div>
+        </section>
     )
 }
+export default Panel
