@@ -1,6 +1,6 @@
-function Panel(encabezado, children){
+function Panel({encabezado, children}){
     return(
-        <section className ="curso">
+        <section className="curso">
             <h2>{encabezado}</h2>
             <div>{children}</div>
         </section>

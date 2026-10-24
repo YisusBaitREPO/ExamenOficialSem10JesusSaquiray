@@ -5,6 +5,7 @@ import Nav from './components/NavPagina'
 import Main from './components/MainPagina'
 import Aside from './components/AsidePagina'
 import Footer from './components/FooterPagina'
+import Panel from './components/PanelPagina'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,10 +21,13 @@ function App() {
     <>
           <Header tituloo ={titulo} inst = {institucion}></Header>
           <Nav></Nav>
-          <Main></Main>
-          <Panel titulo></Panel>
+          <Main>
+          </Main>
           <Aside></Aside>
           <Footer anho = {anio} prog = {programa}></Footer>
+          <Panel encabezado="Hola">
+              <p>holaaaaa</p>
+            </Panel>
     </>
   )
 }
